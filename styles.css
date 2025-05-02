@@ -1,9 +1,16 @@
-#siteLogo{
-  width: 25%;
+.logo {
+  position: relative;
+  z-index: 100;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Poppins';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Poppins";
   color: #00314f;
 }
 
@@ -14,24 +21,23 @@ a {
 a:hover {
   color: #00314f; /* optional: adds underline on hover */
   text-decoration: underline;
-
 }
-h1{
+h1 {
   font-size: 60px;
   text-align: center;
-  padding-bottom: 20%;
-  padding-top: 20%;
+  padding-bottom: 21.5%;
+  padding-top: 21%;
 }
 
-h2{
+h2 {
   font-size: 22px;
   text-align: center;
-  padding-top: .75%;
+  padding-top: 0.75%;
   padding-left: 3.9%;
   padding-right: 3.9%;
 }
 
-h3{
+h3 {
   font-size: 20px;
   text-align: center;
   padding-left: 20%;
@@ -39,16 +45,15 @@ h3{
   justify-content: center;
 }
 
-h4{
+h4 {
   font-size: 20px;
   padding-left: 5%;
   padding-right: 4%;
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
-h5{
+h5 {
   font-size: 26px;
   padding-left: 5%;
   padding-right: 5%;
@@ -57,25 +62,24 @@ h5{
   margin-bottom: 0;
   text-align: center;
   font-weight: bold;
-  text-shadow: #F1F8FF;
+  text-shadow: #f1f8ff;
 }
 
-
-h6{
+h6 {
   font-size: 16px;
-  margin-top: 1%;  
+  margin-top: 1%;
   padding-left: 2.5%;
   text-align: left;
 }
 
-p{
+p {
   font-size: 18px;
   padding-left: 10%;
   padding-right: 5%;
 
-  margin-top: 0;  
-  margin-bottom: 0;  
-  padding-top: .5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.5%;
 
   justify-content: center;
 }
@@ -231,8 +235,6 @@ td {
   width: 40%;
   height: 95%;
   border-radius: 10px;
-
-  
 }
 
 .zeekybooble {
@@ -242,22 +244,10 @@ td {
   margin-bottom: -1px;
 }
 
-/* Carousel Styles */
-.carousel-container {
-  width: 100%;
-  margin: 40px 0;
-  position: center;
-  padding-bottom: 10px;
-
-  margin-top: -30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
 .carousel {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,7 +266,6 @@ td {
   padding: 25px;
   box-sizing: border-box;
 }
-
 
 .carousel-nav {
   position: absolute;
@@ -305,7 +294,6 @@ td {
 .carousel-nav.next {
   right: 20px;
   color: #00314f;
-
 }
 
 .carousel-nav:hover {
@@ -477,21 +465,6 @@ input[type="radio"]:checked + .slide {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Text styling */
-.whiteContainer2 h6 {
-  color: #2c456b;
-  font-size: 28px;
-  margin-bottom: 15px;
-  text-align: center;
-  margin-top: -10px;
-}
-
-.whiteContainer2 p {
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 20px;
-  text-align: left;
-}
 .feature-title {
   font-size: 1.1rem;
   font-weight: bold;
@@ -511,50 +484,49 @@ input[type="radio"]:checked + .slide {
   margin-top: 1rem;
   margin-bottom: 80px;
 }
-.blue-text{
-  color:#2c456b;
+.blue-text {
+  color: #2c456b;
   font-weight: bold;
 }
 
-.purple-text{
-  color:rgb(71, 0, 152);
+.purple-text {
+  color: rgb(71, 0, 152);
   font-weight: bold;
 }
 
-
-.color-text{
-  color:rgb(0, 134, 60);
+.color-text {
+  color: rgb(0, 134, 60);
   font-weight: bold;
 }
 
-.orange-text{
-  color:rgb(255, 0, 251);
+.orange-text {
+  color: rgb(255, 0, 251);
   font-weight: bold;
 }
 
-.red-text{
-  color:rgb(232, 0, 0);
+.red-text {
+  color: rgb(232, 0, 0);
   font-weight: bold;
 }
 
 body {
-  background-color: #F1F8FF; 
+  background-color: #f1f8ff;
 }
 
-.video-container { 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
+.video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
-  .overviewImage-align-right {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 40%;
-    padding: 5%;
- }
+.overviewImage-align-right {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 40%;
+  padding: 5%;
+}
 
-.input-container { 
+.input-container {
   display: flex;
   gap: 45%;
   flex-direction: row;
@@ -563,7 +535,7 @@ body {
   padding-left: 25.5%;
 }
 
-#staffGallery{
+#staffGallery {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -579,13 +551,13 @@ body {
   padding-right: 5%;
 }
 
-.galleryImage{
-  height: 360px; 
-  width: 390px; 
+.galleryImage {
+  height: 360px;
+  width: 390px;
   border-radius: 5px;
-} 
+}
 
-#cabGallery{
+#cabGallery {
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -594,7 +566,7 @@ body {
   gap: 10px;
 }
 
-#driveGallery{
+#driveGallery {
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -603,7 +575,7 @@ body {
   gap: 10px;
 }
 
-#csGallery{
+#csGallery {
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -612,35 +584,34 @@ body {
   gap: 10px;
 }
 
-#tableGallery{
+#tableGallery {
   display: flex;
   flex: row;
   padding-left: 6%;
- 
+
   height: 380px;
   gap: 150px;
 }
 
-.cabImage{
-  height: 360px; 
-  width: 250px; 
-  border-radius: 5px;
-
-}
-
-.driveImage{
-  height: 250px; 
-  width: 250px; 
+.cabImage {
+  height: 360px;
+  width: 250px;
   border-radius: 5px;
 }
 
-.csImage{
-  height: 300px; 
-  width: 250px; 
+.driveImage {
+  height: 250px;
+  width: 250px;
   border-radius: 5px;
 }
 
-.text-container {  
+.csImage {
+  height: 300px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.text-container {
   display: flex;
   flex: 3;
   justify-content: top;
@@ -652,14 +623,14 @@ body {
   width: 90%;
 }
 
-.state-photos{
+.state-photos {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-#mouseGallery{
+#mouseGallery {
   display: flex;
   flex: 7;
   flex-direction: column;
@@ -667,28 +638,26 @@ body {
   height: 630px;
   width: 100%;
   gap: 30px;
-
 }
 
-#mouseGallery1{
+#mouseGallery1 {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   height: 380px;
   width: 100%;
 }
 
-#keyboardGallery1{
+#keyboardGallery1 {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   height: 400px;
   width: 100%;
-
 }
 
-#stateGallery{
-  display: flex; 
+#stateGallery {
+  display: flex;
   flex: 3;
   flex-direction: column;
   justify-content: space-between;
@@ -697,52 +666,47 @@ body {
   width: 100%;
 }
 
-.mouse1{
-  height: 300px; 
+.mouse1 {
+  height: 300px;
   width: 625px;
   border-radius: 10px;
+}
 
-} 
-
-.mouse2{
-  height: 260px; 
-  width: 500px; 
+.mouse2 {
+  height: 260px;
+  width: 500px;
   border-radius: 10px;
-} 
+}
 
-.keyboard1{
-  height: 300px; 
-  width: 625px; 
+.keyboard1 {
+  height: 300px;
+  width: 625px;
   border-radius: 10px;
+}
 
-} 
-
-.keyboard2{
-  height: 300px; 
-  width: 625px; 
+.keyboard2 {
+  height: 300px;
+  width: 625px;
   border-radius: 10px;
-
-
-} 
+}
 table {
   width: 100%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin-top: 0;
   padding-top: 1%;
-  padding-left: 4%; 
+  padding-left: 4%;
   padding-right: 4%;
   font-size: large;
 }
 
-th, td {
-  padding: .5%; 
+th,
+td {
+  padding: 0.5%;
 }
-
 
 th {
   font-weight: bold;
   width: 20%;
-  
 }
 
 td {
@@ -750,13 +714,11 @@ td {
   vertical-align: top;
   padding-top: 0%;
   padding-left: 1.25%;
-  padding-right: 1.25%; 
+  padding-right: 1.25%;
 }
 
 .padding-top {
   padding-top: 2.5%;
 }
 
-
-
-/*used chat to help with video playing and css help
+/*used chat to help with video playing and css help*/
