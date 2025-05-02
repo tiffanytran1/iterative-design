@@ -1,8 +1,7 @@
-  <!-- TO RUN IN BROWSER:
+<!-- TO RUN IN BROWSER:
     1. Install vscode extension Name: open in `browser open-in-browser` by TechER
     2. Right click html file and either run in default browser or another browser
   -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,16 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS Studio</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
   </head>
 
   <!-- page content goes into <body> -->
   <body>
     <div id="logoBar">
-      <h1>Redesigning Partiful's Photo Feature</h1> 
-     <!-- <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/> -->
-      <h2>Iteratively evaluating users' experience to inform platform changes and a redesign</h2>
+      <a href="https://tiffanytran1.github.io/portfolio/#Projects">
+        <h6>< Back to Tiffany Tran's Portfolio</h6>
+      </a>
+      <h1>Redesigning Partiful's Photo Feature</h1>
+      <h2>
+        Iteratively evaluating users' experience to inform platform changes and
+        a redesign
       </h2>
     </div>
     <div id="staffGallery">
@@ -27,67 +33,69 @@
         <source src="./assets/partiful.mov" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+    </div>
 
-    </div> 
+    <h2>
+      Partiful is an app for creating aesthetic event pages, RSVPing, and
+      sending updates via text blast. While the platform is successful with
+      pre-event engagement, the post-event experience is underutilized. I worked
+      with <u>William Tolmie, Havi Nguyen, and Ryan Kim in Spring 2025</u> to
+      redesign a multi-screen iOS photo-sharing feature that deepens user
+      connection by making memories from IRL events feel communal and
+      lasting—without forcing awkward or public sharing.
+    </h2>
+    <br />
 
-    <h3>William Tolmie, Havi Nguyen, Ryan Kim, and I were given the opportunity to work with Partiful in Spring 2025.
-
-
- 
-    <h4>Partiful is an app for creating aesthetic event pages, RSVPing, and sending updates via text blast. While the platform is successful with pre-event engagement, the post-event experience is underutilized. Our challenge was to redesign a multi-screen iOS photo-sharing feature that deepens user connection by making memories from IRL events feel communal and lasting—without forcing awkward or public sharing.
-    </h4>
-    <h2>👥 Target Users <br /></h2>
+    <h4>👥 Target Users</h4>
     <p>
       18–30 year-olds who take and share photos at social events. Guests of
       these events want to share their photos and hosts want a streamlined
       method of collecting said photos.
-      <h2>💡 User Pain Points <br /></h2>
-      <h4>
-        Through research and informal interviews, we identified key barriers:
-      </h4>
-     
-      <p><strong>Social friction</strong>: Guests are hesitant to share
-          photos if they are not familiar with everyone who attended the
-          event.
-        </p>        
-        <p>
-          <strong>Validation</strong>: There is little reward for uploading
-          photos.
-        </p>        
+      <br />
+      <br />
+    </p>
 
-        <p>
+    <h4>
+      💡 User Pain Points (identified through reserach and informal interviews)
+    </h4>
 
-          <strong>Discoverability</strong>: Users often overlook the photo
-          upload option.
-        </p>          
-    </div>
- 
-    
+    <p>
+      <strong>Social friction</strong>: Guests are hesitant to share photos if
+      they are not familiar with everyone who attended the event.
+    </p>
+    <p>
+      <strong>Validation</strong>: There is little reward for uploading photos.
+    </p>
+
+    <p>
+      <strong>Discoverability</strong>: Users often overlook the photo upload
+      option.
+    </p>
+
+    <br />
+    <div>
+      <h2>
+        We then sketched different flows to explore solutions to each of these
+        unique challenges. This allowed us to explore alternate layouts and
+        navigation for the photos experience.
+      </h2>
+      <h4>Our sketches tackled:</h4>
+      <p>-Albums with different themes based on party</p>
+      <p>-A home screen with a “My Albums” section</p>
+      <p>
+        -Incorporating social media elements like hearts, comments, and shares
+      </p>
+      <p>-A new album layout</p>
+      <p>-Snapchat-style geofilters</p>
+      <p>-A dedicated tab for albums</p>
+
+      <h2>
+        Our sketches have been organized by topic and can be seen in the
+        carousel below.
+      </h2>
     </div>
     <br />
-      <div>
-        <p>
-          We sketched different flows to explore solutions to each of these
-          unique challenges. You can view our sketches here.
-        </p>
-        <h2>Our sketches tackled:</h2>
-          <p>-Albums with different themes based on party</p>
-          <p>-A home screen with a “My Albums” section</p>
-          <p>-Incorporating social media elements like hearts, comments, and
-            shares
-          </p>
-          <p>-A new album layout</p>
-          <p>-Snapchat-style geofilters</p>
-          <p>-A dedicated tab for albums</p>
 
-        <h3>
-          This allowed us to explore alternate layouts and navigation for the
-          photos experience.
-        </h3>
-      </div>
-    </div>
-    <br />
-    <div class="carousel-container"></div>
     <div class="carousel">
       <input type="radio" name="carousel" id="slide1" checked />
       <div class="slide">
@@ -100,53 +108,55 @@
         <div class="slide-content">
           <h2>PHOTO ALBUM</h2>
           <div class="feature-section">
-            <h3>📂 Organized Access</h3>
-            <ul>
-              <li>
-                Clear list of all event albums with host, date, and preview
-              </li>
-              <li>One-tap entry to view or upload</li>
-              <li>"Add photos" button added to sticky bar</li>
-              <li>Photo albums tab can be ordered by event</li>
-            </ul>
+            <h4>📂 Organized Access</h4>
+            <p>-Clear list of all event albums with host, date, and preview</p>
+            <p>-One-tap entry to view or upload</p>
+            <p>-"Add photos" button added to sticky bar</p>
+            <p>-Photo albums tab can be ordered by event</p>
           </div>
           <div class="feature-section">
-            <h3>🎨 Smart Layouts</h3>
-            <ul>
-              <li>Sortable (newest, popular) + pinned highlights by hosts</li>
-              <li>
-                Personalizable themes (art gallery, house party, etc.) – see
-                screens 2 & 4
-              </li>
-              <li>"Featured" & "New to You" sections to spotlight photos</li>
-              <li>
-                Condensed event screen (albums prioritized at top of scroll)
-              </li>
-            </ul>
+            <h4>🎨 Smart Layouts</h4>
+
+            <p>Sortable (newest, popular) + pinned highlights by hosts</p>
+            <p>
+              Personalizable themes (art gallery, house party, etc.) – see
+              screens 2 & 4
+            </p>
+            <p>"Featured" & "New to You" sections to spotlight photos</p>
+            <p>Condensed event screen (albums prioritized at top of scroll)</p>
           </div>
           <div class="feature-section">
-            <h3>💡 Engagement Boosters</h3>
-            <ul>
-              <li>
-                Live activity updates ("@Will uploaded!") to spark sharing
-              </li>
-              <li>Event date/location tags for nostalgia</li>
-            </ul>
+            <h4>💡 Engagement Boosters</h4>
+            <p>Live activity updates ("@Will uploaded!") to spark sharing</p>
+            <p>Event date/location tags for nostalgia</p>
           </div>
           <div class="why-it-works">
-            <h3>Why It Works:</h3>
+            <h4>Why It Works:</h4>
             <p>
-              <strong>For Guests:</strong> Effortless Sharing: One-tap uploads
-              and automatic sorting remove friction—no digging through menus
-              or manual organizing. Instant Reward: Seeing their photos
-              featured (with clear credit) makes sharing feel worthwhile.
-              FOMO-Driven: Live activity updates ("@Jess just uploaded!")
-              create friendly pressure to contribute.
+              <strong>For Guests:</strong>
             </p>
+            <p style="margin-left: 20px">
+              Effortless Sharing: One-tap uploads and automatic sorting remove
+              friction—no digging through menus or manual organizing.
+            </p>
+            <p style="margin-left: 20px">
+              Instant Reward: Seeing their photos featured (with clear credit)
+              makes sharing feel worthwhile.
+            </p>
+            <p style="margin-left: 20px">
+              FOMO-Driven: Live activity updates ("@Jess just uploaded!") create
+              friendly pressure to contribute.
+            </p>
+            <br />
             <p>
-              <strong>For Hosts:</strong> Curated, Not Chaotic: Pinned
-              highlights and themes (like art gallery or house party) let
-              hosts shape the album's vibe without micromanaging.
+              <strong>For Hosts:</strong>
+            </p>
+            <p style="margin-left: 20px">
+              Curated, Not Chaotic: Pinned highlights and themes (like art
+              gallery or house party) let hosts shape the album's vibe without
+              micromanaging.
+            </p>
+            <p style="margin-left: 20px">
               Event-specific albums (*art gallery/house party styles*) make
               photos feel valuable, not disposable
             </p>
@@ -163,53 +173,51 @@
         <div class="slide-content">
           <h2>GEOFILTER</h2>
           <div class="feature-section">
-            <h3>Smart Notification</h3>
-            <ul>
-              <li>
-                Guests near the event get a push: "📸 You're at [Event]! Tap
-                to add photos."
-              </li>
-              <li>
-                Clicking it opens the app's camera with the event's geofilter
-                pre-loaded.
-              </li>
-            </ul>
+            <h4>Smart Notification</h4>
+            <p>
+              -Guests near the event get a push: "📸 You're at [Event]! Tap to
+              add photos."
+            </p>
+            <p>
+              -Clicking it opens the app's camera with the event's geofilter
+              pre-loaded.
+            </p>
           </div>
           <div class="feature-section">
-            <h3>Flexible Capture</h3>
-            <ul>
-              <li>
-                Live Camera: Snap pics instantly with the event's filter
-                (e.g., "Rob's Birthday 2025")
-              </li>
-              <li>
-                Photo Library: Pick existing photos to apply the filter
-                retroactively
-              </li>
-            </ul>
+            <h4>Flexible Capture</h4>
+            <p>
+              -Live Camera: Snap pics instantly with the event's filter (e.g.,
+              "Rob's Birthday 2025")
+            </p>
+            <p>
+              -Photo Library: Pick existing photos to apply the filter
+              retroactively
+            </p>
           </div>
           <div class="feature-section">
-            <h3>Save & Share Options</h3>
-            <ul>
-              <li>
-                Save with or without the filter (for authenticity or fun)
-              </li>
-              <li>Auto-upload to the event album or manual review</li>
-            </ul>
+            <h4>Save & Share Options</h4>
+            <p>-Save with or without the filter (for authenticity or fun)</p>
+            <p>-Auto-upload to the event album or manual review</p>
           </div>
           <div class="why-it-works">
-            <h3>Why It Works</h3>
+            <h4>Why It Works</h4>
             <p>
-              <strong>Guests:</strong> Feels playful, not pushy—filter designs
-              spark creativity.
+              <strong>Guests:</strong>
+            </p>
+            <p style="margin-left: 20px">
+              Feels playful, not pushy—filter designs spark creativity.
             </p>
             <p>
-              <strong>Hosts:</strong> More candid, on-theme photos without
-              begging.
+              <strong>Hosts:</strong>
+            </p>
+            <p style="margin-left: 20px">
+              More candid, on-theme photos without begging.
             </p>
             <p>
-              <strong>App:</strong> Leverages FOMO + location to boost
-              engagement.
+              <strong>App:</strong>
+            </p>
+            <p style="margin-left: 20px">
+              Leverages FOMO + location to boost engagement.
             </p>
           </div>
         </div>
@@ -226,27 +234,25 @@
         <div class="slide-content">
           <h2>OUT OF EVENT PAGE</h2>
           <div class="feature-section">
-            <h3>Text Blasts</h3>
-            <ul>
-              <li>
-                Alerts for new photos ("Will added 12 prints"), tags ("Tiffany
-                tagged you"), and unseen content ("20 new prints")
-              </li>
-              <li>Sends via *app + SMS* with deep links</li>
-            </ul>
+            <h4>Text Blasts</h4>
+
+            <p>
+              -Alerts for new photos ("Will added 12 prints"), tags ("Tiffany
+              tagged you"), and unseen content ("20 new prints")
+            </p>
+            <p>-Sends via *app + SMS* with deep links</p>
           </div>
           <div class="feature-section">
-            <h3>Dedicated Albums Tab</h3>
-            <ul>
-              <li>
-                Central hub with all events ("Will's Half-Bday, "Jeff's Baby
-                Shower")
-              </li>
-              <li>+ icon for quick adding to albums</li>
-            </ul>
+            <h4>Dedicated Albums Tab</h4>
+
+            <p>
+              -Central hub with all events ("Will's Half-Bday, "Jeff's Baby
+              Shower")
+            </p>
+            <p>- + icon for quick adding to albums</p>
           </div>
           <div class="why-it-works">
-            <h3>Why It Works</h3>
+            <h4>Why It Works</h4>
             <p>
               FOMO Engine: Notifications use social proof (tags, counts) to
               drive engagement.
@@ -269,41 +275,33 @@
         <div class="slide-content">
           <h2>POST SHARING EXPERIENCE</h2>
           <div class="feature-section">
-            <h3>Social Interactions</h3>
-            <ul>
-              <li>
-                Likes, comments, and sharing on each photo ("Loves | Comment")
-              </li>
-              <li>Tagging users in photos</li>
-              <li>
-                Option to add photos to personal-only albums or shared spaces
-              </li>
-              <li>Photo additions excluded from activity feed</li>
-            </ul>
+            <h4>Social Interactions</h4>
+
+            <p>
+              -Likes, comments, and sharing on each photo ("Loves | Comment")
+            </p>
+            <p>-Tagging users in photos</p>
+            <p>
+              -Option to add photos to personal-only albums or shared spaces
+            </p>
+            <p>-Photo additions excluded from activity feed</p>
           </div>
           <div class="feature-section">
-            <h3>Smart Sorting & Filtering</h3>
-            <ul>
-              <li>Sort by poster, time, or activity</li>
-              <li>Filter by: album sections or visibility</li>
-            </ul>
+            <h4>Smart Sorting & Filtering</h4>
+            <p>-Sort by poster, time, or activity</p>
+            <p>-Filter by: album sections or visibility</p>
           </div>
           <div class="feature-section">
-            <h3>Activity Feed</h3>
-            <ul>
-              <li>
-                Chronological updates ("havi updated 9 items • 42 min ago")
-              </li>
-              <li>
-                Hybrid "Activity View" (social updates) + "Gallery View"
-              </li>
-            </ul>
+            <h4>Activity Feed</h4>
+
+            <p>-Chronological updates ("havi updated 9 items • 42 min ago")</p>
+            <p>-Hybrid "Activity View" (social updates) + "Gallery View"</p>
           </div>
           <div class="why-it-works">
-            <h3>Why It Works</h3>
+            <h4>Why It Works</h4>
             <p>
-              Rewards Participation: Public recognition (likes/tags)
-              encourages more sharing.
+              Rewards Participation: Public recognition (likes/tags) encourages
+              more sharing.
             </p>
             <p>
               Flexible Privacy: "Just You" albums reduce social pressure for
@@ -314,8 +312,8 @@
               people (Jeff/Havi) mirrors real-world memory recall.
             </p>
             <p>
-              FOMO-Friendly: Live timestamps ("27 min ago") + upload alerts
-              keep engagement fresh.
+              FOMO-Friendly: Live timestamps ("27 min ago") + upload alerts keep
+              engagement fresh.
             </p>
           </div>
         </div>
@@ -323,83 +321,66 @@
         <label for="slide1" class="next">❯</label>
       </div>
     </div>
-  </div>
-  <div class="whiteContainer2">
-    <h6>Merging Ideas</h6>
-    <p>
+
+    <h2>Merging Ideas</h2>
+    <h3>
       We held a collaborative review of our sketches and noted patterns across
       designs, such as the need for visibility, validation, and navigation
       simplicity. Instead of treating each sketch as separate, we combined the
       strongest elements from each.
+    </h3>
+
+    <h4>Add Photos</h4>
+    <p>
+      - We kept the persistent upload button on the Events page to reduce
+      discoverability friction.
     </p>
+    <br />
 
-    <div class="feature-list" style="text-align: left">
-      <div class="feature-item">
-        <h5 class="feature-title">Add Photos</h5>
-        <ul>
-          <li>
-            We kept the persistent upload button on the Events page to reduce
-            discoverability friction.
-          </li>
-        </ul>
-      </div>
+    <h4>"My Albums" Tab</h4>
+    <p>
+      - This tab supports photo visibility outside the event scroll, giving
+      users an easy way to revisit and sort photo albums across all events.
+    </p>
+    <br />
 
-      <div class="feature-item">
-        <h5 class="feature-title">"My Albums" Tab</h5>
-        <ul>
-          <li>
-            This tab supports photo visibility outside the event scroll,
-            giving users an easy way to revisit and sort photo albums across
-            all events.
-          </li>
-        </ul>
-      </div>
+    <h4>Tagging + Social Interactions</h4>
+    <p>
+      - We carried forward ideas like tagging, hearts, and comments to add
+      validation for users.
+    </p>
+    <p>
+      - These live under each image, enabling engagement post-upload/post-event
+      without the pressure of a public feed.
+    </p>
+    <br />
 
-      <div class="feature-item">
-        <h5 class="feature-title">Tagging + Social Interactions</h5>
-        <ul>
-          <li>
-            We carried forward ideas like tagging, hearts, and comments to add
-            validation for users.
-          </li>
-          <li>
-            These live under each image, enabling engagement
-            post-upload/post-event without the pressure of a public feed.
-          </li>
-        </ul>
-      </div>
+    <h4>Event-Specific Photo Upload</h4>
+    <p>- Our sketch of a camera UI that saves to a specific event.</p>
+    <p>- This screen also integrates playful design (e.g., geofilters).</p>
+    <br />
 
-      <div class="feature-item">
-        <h5 class="feature-title">Event-Specific Photo Upload</h5>
-        <ul>
-          <li>Our sketch of a camera UI that saves to a specific event.</li>
-          <li>
-            This screen also integrates playful design (e.g., geofilters).
-          </li>
-        </ul>
-      </div>
+    <h4>Reflection</h4>
+    <p>
+      - Designing this feature list helped us think more holistically about how
+      users engage with memories—before, during, and after events.
+    </p>
+    <p>
+      - We prioritized intuitive UI and low-friction interactions while staying
+      mindful of emotional drivers like nostalgia, validation, and community.
+    </p>
+    <p>
+      - Through sketches and feedback loops, we learned how even small decisions
+      (like tab placement or icon affordances) can significantly influence user
+      behavior.
+    </p>
+    <br />
 
-      <div class="feature-item">
-        <h5 class="feature-title">Reflection</h5>
-        <ul>
-          <li>
-            Designing this feature list helped us think more holistically
-            about how users engage with memories—before, during, and after
-            events.
-          </li>
-          <li>
-            We prioritized intuitive UI and low-friction interactions while
-            staying mindful of emotional drivers like nostalgia, validation,
-            and community.
-          </li>
-          <li>
-            Through sketches and feedback loops, we learned how even small
-            decisions (like tab placement or icon affordances) can
-            significantly influence user behavior.
-          </li>
-        </ul>
-      </div>
-    </div>
+    <h2>Wireframes</h2>
+    <h3>
+      From our sketches, we created low-fidelity wireframes, which can be seen
+      below, to visualize the flow of our app.
+    </h3>
 
     <div class="image-container">
       <img
@@ -408,191 +389,188 @@
         class="wireframe-image"
       />
     </div>
-    <div class="combinedHeaderContainer subheader">
-      <h1 class="align-left">3</h1>
-      <span class="line"></span>
-      <h1 class="align-right">WIREFRAME CRITIQUE</h1>
-    </div>
-    <div class="blueContainer">
-      <br />
-      <h2 style="text-align: center">Insights & Incorporation</h2>
-      <br />
-      <h2>
-        We received feedback for our initial wireframes from Grace, a design
-        engineer at Partiful, and Michael, a Teaching Assistant for CSCI 1300.
-        Below we detail their feedback along with the ways we incorporated it
-        into our hi-fi prototype.
-      </h2>
-      <br />
-      <br />
-      <h2 class="smallerh2 darkBlue">
+
+    <h2>
+      We received feedback for our initial wireframes from Grace, a design
+      engineer at Partiful, and Michael, a Teaching Assistant for CSCI 1300.
+      Below we detail their feedback along with the ways we incorporated it into
+      our hi-fi prototype.
+    </h2>
+    <br />
+
+    <p>
+      <span class="blue-text">
         Grace "liked" the sticky bar with the slideshow of photos near the top
-        of the event page.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We maintained the sticky bar slideshow in our final design.
-      </h2>
-      <br />
-      <h2 class="smallerh2 darkBlue">
+        of the event page.</span
+      >
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We maintained the sticky bar slideshow in our final design.
+    </p>
+
+    <p>
+      <span class="blue-text">
         Grace said it "would be nice to show up to X photos [in the sticky bar
-        slideshow] and gate everything else" for after partiers RSVP 'yes' to
-        an event.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We added an RSVP-based privacy feature to Partiful photos.
-      </h2>
-      <br />
-      <h2 class="smallerh2 darkBlue">
-        Michael said the original “plus button icon” for the slideshow was
-        confusing because it makes him think he will be seeing more photos,
-        not adding new ones.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We changed the icon to be more descriptive (Photo Album with a plus
-        sign) and its location (before the slideshow) to be less confusing.
-      </h2>
-      <br />
-      <h2 class="smallerh2 darkBlue">
-        Grace said the "add entry point" for the sticky bar slideshow "feels a
-        little awkward" and noted theat the "space on h-scrolls is
-        traditionally occupied by a > scroll button". She recommended that we
-        "have a CTA at the very end of the h-scroll" so that partiers are able
-        to see all content in the slideshow.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We removed the add entry point at the end of the slideshow per Grace's
-        recommendations. We did not include a CTA button as it made the
-        section very cluttered when we prototyped it. Instead, a slider under
-        the photos should appear when the slideshow is populated with more
-        photos.
-      </h2>
-      <br />
-      <h2 class="smallerh2 darkBlue">
-        Grace noticed our introduction of an 'Albums' interface and concept
-        and asked questions about whether "each event [was] an album" and "an
-        album need[s] to be created or is something automatically an album" if
-        it is attached to an event.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We clarified the role of albums as collections of photos that are
-        attached to events. Users can create an album for a specific purpose,
-        but all photos added to an event will land in a catch-all "All Photos"
-        album as well.
-      </h2>
-      <br />
-      <h2 class="smallerh2 darkBlue">
+        slideshow] and gate everything else" for after partiers RSVP 'yes' to an
+        event.</span
+      >
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We added an RSVP-based privacy feature to Partiful photos.
+    </p>
+
+    <p>
+      <span class="blue-text"
+        >Michael said the original “plus button icon” for the slideshow was
+        confusing because it makes him think he will be seeing more photos, not
+        adding new ones.</span
+      >
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We changed the icon to be more descriptive (Photo Album with a plus sign)
+      and its location (before the slideshow) to be less confusing.
+    </p>
+
+    <p>
+      <span class="blue-text"
+        >Grace said the "add entry point" for the sticky bar slideshow "feels a
+        little awkward" and noted theat the "space on h-scrolls is traditionally
+        occupied by a > scroll button". She recommended that we "have a CTA at
+        the very end of the h-scroll" so that partiers are able to see all
+        content in the slideshow.</span
+      >
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We removed the add entry point at the end of the slideshow per Grace's
+      recommendations. We did not include a CTA button as it made the section
+      very cluttered when we prototyped it. Instead, a slider under the photos
+      should appear when the slideshow is populated with more photos.
+    </p>
+
+    <p>
+      <span class="blue-text">
+        Grace noticed our introduction of an 'Albums' interface and concept and
+        asked questions about whether "each event [was] an album" and "an album
+        need[s] to be created or is something automatically an album" if it is
+        attached to an event.</span
+      >
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We clarified the role of albums as collections of photos that are attached
+      to events. Users can create an album for a specific purpose, but all
+      photos added to an event will land in a catch-all "All Photos" album as
+      well.
+    </p>
+
+    <p>
+      <span class="blue-text">
         Michael commented on making sure to keep spacing and proportion
         continuity from the app into our Hi-Fi Prototype as it seemed we
-        deviated slightly with our Wireframes.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We made sure to use the Figma templates provided and keep the original
-        Auto layouts.
-      </h2>
-      <br />
+        deviated slightly with our Wireframes.</span
+      >
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We made sure to use the Figma templates provided and keep the original
+      Auto layouts.
+    </p>
 
-      <h2 class="smallerh2 darkBlue">
-        Grace said the "upload button can be sticky/fixed" on an album page
-        here since it is "such an important button" and that only one upload
-        button "is needed" on the album page.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We removed the additional upload button and made it sticky.
-      </h2>
-      <br />
-      <h2 class="smallerh2 darkBlue">
-        Grace "liked" our geofilters idea, calling it "very smart"
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We implemented the geofilters idea in our final product.
-      </h2>
-      <br />
-      <h2 class="smallerh2 darkBlue">
-        Grace said the "entry point" for the individual photo viewing screen
-        is "a little unclear" and called the event name "too promiment".
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        Using Figma Workflows, we clarified the entry point(s) for the
-        individual photo viewing screen and made the event name less
-        prominent.
-      </h2>
-      <h2 class="smallerh2 darkBlue">
-        Michael made the suggestion of cleaning up the photo taking page to
-        make it less cluttered and more intuitive.
-      </h2>
-      <br />
-      <h2 class="smallerh2 textRight lightBlue">
-        We removed both the download button from the main page and the photo
-        uploader.
-      </h2>
-      <br />
-    </div>
-    <div class="combinedHeaderContainer subheader">
-      <h1 class="align-left">4</h1>
-      <span class="line"></span>
-      <h1 class="align-right">HI-FI PROTOTYPE</h1>
-    </div>
     <p>
+      <span class="blue-text">
+        Grace said the "upload button can be sticky/fixed" on an album page here
+        since it is "such an important button" and that only one upload button
+        "is needed" on the album page.</span
+      >
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We removed the additional upload button and made it sticky.
+    </p>
+
+    <p>
+      <span class="blue-text">
+        Grace "liked" our geofilters idea, calling it "very smart"
+      </span>
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We implemented the geofilters idea in our final product.
+    </p>
+
+    <p>
+      <span class="blue-text">
+        Grace said the "entry point" for the individual photo viewing screen is
+        "a little unclear" and called the event name "too promiment".
+      </span>
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      Using Figma Workflows, we clarified the entry point(s) for the individual
+      photo viewing screen and made the event name less prominent.
+    </p>
+
+    <p>
+      <span class="blue-text">
+        Michael made the suggestion of cleaning up the photo taking page to make
+        it less cluttered and more intuitive.
+      </span>
+    </p>
+    <p style="text-indent: 40px; color: rgb(86, 0, 216)">
+      We removed both the download button from the main page and the photo
+      uploader.
+    </p>
+
+    <br />
+
+    <h2>Hi-Fi Prototype</h2>
+
+    <h3>
       Moving forward, we used Figma to build an interactive prototype with
       linked screens and interactions. Key flows include the pre-RSVP view,
       uploading to an album, and geofilters for photos. We leaned into fun,
       feedback-rich interactions and subtle nudges, rather than heavy social
-      pressure. You can view the prototype
+      pressure.
+    </h3>
+
+    <h3>
+      You can view the prototype
       <a
         href="https://www.figma.com/proto/NqI13j4565lEvriQupFu3P/%F0%9F%90%BB-Partiful-x-Brown-U-2025--Internal-Working-Copy-?node-id=0-1&t=Y544yr8u9nsJZNlA-1"
         >here.</a
       >
-      Feel free to enter prototype mode as either a Host or Guest to
-      experience our mockups. We also recorded a
+      Feel free to enter prototype mode as either a Host or Guest to experience
+      our mockups. We also recorded a
       <a
         href="https://www.loom.com/share/2e6b61d343084892acbc4a790003e6b1?sid=0f7a601a-608f-4f92-a54f-1ddfa9aabcef"
         >loom</a
       >
       that demonstrates the various prototypes. For more details about our
       mockups, please note the Design Choices on the Figma file.
-    </p>
+    </h3>
+    <br />
     <div class="iphone-frame">
       <video class="iphone-video" controls>
         <source src="assets/guestview.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
-  </div>
-  <div class="blueContainer">
-    <div class="combinedHeaderContainer subheader">
-      <h1 class="align-left">4</h1>
-      <span class="line"></span>
-      <h1 class="align-right">FINAL REFLECTIONS</h1>
-    </div>
-    <p>
-      We presented our final Hi-Fi Prototype to Grace who really enjoyed
-      seeing our progress and the changes we made. Grace specifically
-      appreciated how our approach was more “grounded” rather than being too
-      “gimmicky.” Unfortunately, we learned that the Photos project is on
-      pause and she was unsure if our suggestions fit into the roadmap.
-      <br />
-      If we had more time with the Hi-Fi Prototype, we would have loved to
+
+    <h2>Final Reflections</h2>
+    <h3>
+      We presented our final Hi-Fi Prototype to Grace who really enjoyed seeing
+      our progress and the changes we made. Grace specifically appreciated how
+      our approach was more “grounded” rather than being too “gimmicky.”
+      Unfortunately, we learned that the Photos project is on pause and she was
+      unsure if our suggestions fit into the roadmap.
+    </h3>
+
+    <h3>
+      If we had more time with the Hi-Fi Prototype: we would have loved to
       include more interactions to feed into the social media aspect of
       Partiful. It would have also been very helpful to explore different edge
-      cases, like wanting to make certain photos visible before RSVP-ing or
-      when there are only a few photos uploaded. Overall, we are really with
-      the progress we made during this project and are excited to see how
-      Partiful moves forward with their Photos feature.
-    </p>
-  </div>
-</body>
+      cases, like wanting to make certain photos visible before RSVP-ing or when
+      there are only a few photos uploaded. Overall, we are really with the
+      progress we made during this project and are excited to see how Partiful
+      moves forward with their Photos feature.
+    </h3>
 
-
+    <br />
+    <br />
   </body>
-
-  
 </html>
